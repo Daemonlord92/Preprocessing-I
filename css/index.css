@@ -1,1 +1,252 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+header {
+  width: 75%;
+  margin: 1em auto;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff8080;
+  padding: 0.5em;
+}
+header nav a:hover {
+  transition: 0.5s;
+  background-color: #990000;
+}
+section .card {
+  background-color: lightgrey;
+  padding: 2em;
+}
+section .card h1 {
+  font-size: 2em;
+}
+section .card h1:hover {
+  transition: 0.5s;
+  color: white;
+  background-color: #404040;
+}
+section .card img {
+  width: 30%;
+  height: auto;
+  margin: 1em 2em;
+}
+@media all and (max-width: 700px) {
+  section .card img {
+    display: none;
+  }
+}
+@media all and (max-width: 700px) {
+  section .card h4 {
+    margin: 1em 0;
+  }
+}
+section .card p {
+  margin: 2em 0;
+}
+section .card a {
+  background-color: lightblue;
+  color: black;
+  padding: 0.25em;
+  text-decoration: none;
+  margin: 1em 0;
+  border-radius: 0.5em;
+  font-size: 1.5em;
+}
+section .card a:hover {
+  transition: 0.3s;
+  background-color: blue;
+  color: white;
+}
+section h3 {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+section table {
+  margin: 0.5em 0;
+  width: 100%;
+}
+section table tr {
+  border: 1px black solid;
+}
+section table th {
+  padding: 0.25 0;
+  border-right: 1px black solid;
+}
+section table td {
+  padding: 0.25 0;
+  border-right: 1px black solid;
+  text-align: center;
+}
+.example-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+.example-text div {
+  width: 50%;
+}
+.example-text div h2 {
+  text-align: center;
+  font-size: 1.6em;
+  padding: 0.75 0;
+}
+.example-text div ul {
+  text-align: center;
+}
+.example-text div li {
+  padding: 0.5em 0;
+  border: 0.5px black solid;
+}
+footer {
+  background-color: grey;
+  text-align: center;
+}
+footer p {
+  color: white;
+  font-style: oblique;
+  font-weight: bolder;
+  padding: 1em 0;
+}
