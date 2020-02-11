@@ -57,3 +57,167 @@ html, body {
     height: 100%;
 }
 
+//Varibles
+
+@em-1:1em 0;
+@em-margin:.5em 0;
+@em-25:.25 0;
+
+
+.hundred() {
+	width: 100%;
+}
+
+.flexxer() {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+//Body Code
+body {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+//Header Code
+
+header {
+	width: 75%;
+	margin: 1em auto;
+	nav {
+		//margin: 0 auto;
+		.flexxer();
+		justify-content: space-around;
+		a {
+			text-decoration: none;
+			color: white;
+			background-color: lighten(red, 25%);
+			padding: .5em;
+
+			&:hover {
+				transition: 0.5s;
+				background-color:darken(red, 20%);
+			}
+		}
+	}
+}
+
+//Section Code
+
+section {
+
+	.card {
+		background-color: lightgrey;
+		padding:2em;
+
+		h1{
+			font-size: 2em;
+
+			&:hover {
+				transition: 0.5s;
+				color: white;
+				background-color: darken(grey, 25%);
+			}
+		}
+
+		img {
+			width: 30%;
+			height: auto;
+			margin: 1em 2em;
+
+			@media all and (max-width: 700px) {
+				display: none;
+			}
+		}
+
+		h4 {
+			@media all and ( max-width: 700px){
+				margin:@em-1;
+			}
+		}
+
+		p {
+			margin: 2em 0;
+		}
+
+		a {
+			background-color: lightblue;
+			color: black;
+			padding: .25em;
+			text-decoration: none;
+			margin: 1em 0;
+			border-radius: .5em;
+			font-size: 1.5em;
+
+			&:hover {
+				transition: 0.3s;
+				background-color: blue;
+				color: white;
+			}
+		}
+	}
+
+	h3 {
+		font-size: 1.2em;
+		margin:@em-margin;
+		}
+
+	table {
+		margin:@em-margin;
+		.hundred();
+
+		tr {
+			border: 1px black solid;
+		}
+
+		th {
+			padding:@em-25;
+			border-right: 1px black solid;
+		}
+
+		td {
+			padding:@em-25;
+			border-right: 1px black solid;
+			text-align: center;
+		}
+	}
+
+}
+
+.example-text {
+	.flexxer();
+
+	div {
+		width: 50%;
+
+		h2 {
+			text-align: center;
+			font-size: 1.6em;
+			padding: .75 0;
+		}
+
+		ul {
+			text-align: center;
+		}
+
+		li {
+			padding:@em-margin;
+			border:.5px black solid;
+			
+		}
+	}
+}
+
+//Footer Code
+
+footer {
+	background-color:grey;
+	text-align: center;
+	p {
+		color: white;
+		font-style: oblique;
+		font-weight: bolder;
+
+		padding:@em-1;
+	}
+}
